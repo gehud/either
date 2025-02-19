@@ -13,10 +13,6 @@
 //!
 
 #![doc(html_root_url = "https://docs.rs/either/1/")]
-#![no_std]
-
-#[cfg(any(test, feature = "use_std"))]
-extern crate std;
 
 #[cfg(feature = "serde")]
 pub mod serde_untagged;
