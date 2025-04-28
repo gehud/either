@@ -17,6 +17,9 @@ The enum `Either` with variants `Left` and `Right` is a general purpose sum type
 keywords = ["data-structure", "no_std"]
 categories = ["data-structures", "no-std"]
 
+[lib]
+crate-type = ["rlib", "dylib"]
+
 [dependencies]
 serde = { version = "1.0.95", optional = true, default-features = false, features = ["alloc", "derive"] }
 
